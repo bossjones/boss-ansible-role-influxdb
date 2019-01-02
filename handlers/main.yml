@@ -1,7 +1,7 @@
 ---
-# handlers file for boss-ansible-role-rsyslogd
-
-- name: Restart rsyslogd
+# handlers file for ansible-influxdb
+- name: restart influxdb
   service:
-    name: 'rsyslog'
-    state: 'restarted'
+    name: influxdb
+    state: restarted
+  become: true
